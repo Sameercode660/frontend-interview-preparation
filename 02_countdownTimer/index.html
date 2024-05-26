@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="headingContainer">
+        <h1>Countdown Container</h1>
+      </div>
+      <div class="timeContainer">
+        <p class="hourTimeContainer">Hours</p>
+        <p class="minuteTimeContainer">Minutes</p>
+        <p class="secondTimeContainer">Seconds</p>
+      </div>
+      <div class="inputTimeContainer">
+        <input
+          type="number"
+          class="hours"
+          name="hours"
+          id=""
+          placeholder="00"
+          max="2"
+          oninput="this.value = this.value.slice(0, 2)"
+        />
+        <p class="hoursPara">:</p>
+        <input
+          class="minutes"
+          type="number"
+          name="minutes"
+          id=""
+          placeholder="00"
+          maxlength="2"
+          oninput="this.value = this.value.slice(0, 2)"
+        />
+        <p class="minutesPara">:</p>
+        <input
+          class="seconds"
+          type="number"
+          name="seconds"
+          id=""
+          placeholder="00"
+          max="2"
+          oninput="this.value = this.value.slice(0, 2)"
+        />
+      </div>
+      <div class="btnsContainer">
+        <button class="btn start">Start</button>
+        <button class="btn stop">Stop</button>
+        <button class="btn reset">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
